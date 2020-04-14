@@ -28,6 +28,7 @@ public class ResponseWithData<T> extends Response {
         this.data = data;
     }
 
+    @SuppressWarnings("rawtypes")
     public static ResponseWithData buildFailure(String errCode, String errMessage) {
         ResponseWithData response = new ResponseWithData();
         response.setSuccess(false);
@@ -35,7 +36,7 @@ public class ResponseWithData<T> extends Response {
         response.setMessage(errMessage);
         return response;
     }
-
+    @SuppressWarnings("rawtypes")
     public static ResponseWithData buildSuccess(){
         ResponseWithData response = new ResponseWithData();
         response.setSuccess(true);
