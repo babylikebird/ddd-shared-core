@@ -24,8 +24,9 @@ public class ResponseWithData<T> extends Response {
         return data;
     }
 
-    public void setData(T data) {
+    public ResponseWithData<T> setData(T data) {
         this.data = data;
+        return this;
     }
 
     @SuppressWarnings("rawtypes")
