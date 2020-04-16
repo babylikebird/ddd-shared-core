@@ -8,25 +8,25 @@ public class Response extends DTO {
 
     private static final long serialVersionUID = 1L;
 
-    public static final String DEFAULT_SUCCESS_CODE = "200";
+    public static final int DEFAULT_SUCCESS_CODE = 200;
 
     public static final String DEFAULT_SUCCESS_MESSAGE = "操作成功";
 
     private boolean isSuccess;
 
-    private String code = DEFAULT_SUCCESS_CODE;
+    private int code = DEFAULT_SUCCESS_CODE;
 
-    private String message = DEFAULT_SUCCESS_MESSAGE;
+    private String msg = DEFAULT_SUCCESS_MESSAGE;
 
     public Response() {
 
     }
 
-    public static Response buildFailure(String errCode, String errMessage) {
+    public static Response buildFailure(int errCode, String errMessage) {
         Response response = new Response();
         response.setSuccess(false);
         response.setCode(errCode);
-        response.setMessage(errMessage);
+        response.setMsg(errMessage);
         return response;
     }
 
@@ -44,19 +44,19 @@ public class Response extends DTO {
         isSuccess = success;
     }
 
-    public String getCode() {
+    public int getCode() {
         return code;
     }
 
-    public void setCode(String code) {
+    public void setCode(int code) {
         this.code = code;
     }
 
-    public String getMessage() {
-        return message;
+    public String getMsg() {
+        return msg;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 }

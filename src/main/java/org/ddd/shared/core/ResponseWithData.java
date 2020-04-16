@@ -30,11 +30,11 @@ public class ResponseWithData<T> extends Response {
     }
 
     @SuppressWarnings("rawtypes")
-    public static ResponseWithData buildFailure(String errCode, String errMessage) {
+    public static ResponseWithData buildFailure(int errCode, String errMessage) {
         ResponseWithData response = new ResponseWithData();
         response.setSuccess(false);
         response.setCode(errCode);
-        response.setMessage(errMessage);
+        response.setMsg(errMessage);
         return response;
     }
     @SuppressWarnings("rawtypes")
