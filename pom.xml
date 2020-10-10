@@ -6,7 +6,7 @@
 
     <groupId>org.ddd.shared</groupId>
     <artifactId>ddd-shared-core</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <properties>
         <guava-version>27.1-jre</guava-version>
@@ -19,6 +19,18 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>8</source>
@@ -27,6 +39,18 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>eccCashierSnapshotsDeploy</id>
+            <name>Releases name</name>
+            <url>http://10.10.11.151:38081/repository/ecc-cashier-release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>eccCashierSnapshotsDeploy</id>
+            <name>snapshots name</name>
+            <url>http://10.10.11.151:38081/repository/ecc-cashier-snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
     <repositories>
         <repository>
             <id>ali-maven</id>
