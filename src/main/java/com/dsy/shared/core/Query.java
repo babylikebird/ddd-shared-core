@@ -1,4 +1,4 @@
-package org.ddd.shared.core;
+package com.dsy.shared.core;
 
 /**
  * <p>查询参数基类</p>

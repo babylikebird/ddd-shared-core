@@ -1,4 +1,4 @@
-package org.ddd.shared.core;
+package com.dsy.shared.core;
 
 /**
  * <p>展现层， 返回给前端数据的基类</p>

@@ -1,7 +1,4 @@
-package org.ddd.shared.core.event;
-
-
-import org.ddd.shared.core.utils.UuidGenerator;
+package com.dsy.shared.core.event;
 
 import java.util.Date;
 
@@ -10,9 +7,19 @@ import java.util.Date;
  * @author Mr.Yangxiufeng
  * @date 2020-03-25 11:17
  */
-public abstract class DomainEvent {
-    private final String id = UuidGenerator.newUuid();
+public abstract class AbstractEvent {
+    /**
+     * 事件的唯一标识
+     */
+    private final String id;
+    /**
+     * 事件的时间
+     */
     private final Date createAt = new Date();
+
+    public AbstractEvent(String id) {
+        this.id = id;
+    }
 
     public String getId() {
         return id;

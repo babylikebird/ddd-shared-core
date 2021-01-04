@@ -1,4 +1,4 @@
-package org.ddd.shared.core;
+package com.dsy.shared.core;
 
 /**
  * <p>领域服务接口</p>

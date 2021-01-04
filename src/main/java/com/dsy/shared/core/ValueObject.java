@@ -1,4 +1,4 @@
-package org.ddd.shared.core;
+package com.dsy.shared.core;
 
 import java.io.Serializable;
 

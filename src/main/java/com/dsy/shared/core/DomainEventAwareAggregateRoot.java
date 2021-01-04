@@ -1,6 +1,6 @@
-package org.ddd.shared.core;
+package com.dsy.shared.core;
 
-import org.ddd.shared.core.event.DomainEvent;
+import com.dsy.shared.core.event.AbstractEvent;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,13 +13,13 @@ import java.util.List;
  */
 public abstract class DomainEventAwareAggregateRoot extends AggregateRoot {
     private static final long serialVersionUID = 1L;
-    private List<DomainEvent> events = new ArrayList<>();
+    private List<AbstractEvent> events = new ArrayList<>();
 
-    protected void raiseEvent(DomainEvent event){
+    protected void raiseEvent(AbstractEvent event){
         this.events.add(event);
     }
 
-    public List<DomainEvent> getEvents() {
+    public List<AbstractEvent> getEvents() {
         return Collections.synchronizedList(events);
     }
 
