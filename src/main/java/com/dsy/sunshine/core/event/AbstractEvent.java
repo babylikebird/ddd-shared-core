@@ -1,4 +1,4 @@
-package com.dsy.shared.core.event;
+package com.dsy.sunshine.core.event;
 
 import java.util.Date;
 

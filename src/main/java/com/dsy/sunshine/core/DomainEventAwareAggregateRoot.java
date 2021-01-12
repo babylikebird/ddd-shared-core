@@ -1,6 +1,6 @@
-package com.dsy.shared.core;
+package com.dsy.sunshine.core;
 
-import com.dsy.shared.core.event.AbstractEvent;
+import com.dsy.sunshine.core.event.AbstractEvent;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package com.dsy.shared.core;
+package com.dsy.sunshine.core;
 
 /**
  * <p>聚合根</p>

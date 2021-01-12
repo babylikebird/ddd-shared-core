@@ -1,4 +1,4 @@
-package com.dsy.shared.core.event;
+package com.dsy.sunshine.core.event;
 
 /**
  * <p>领域事件发行器</p>

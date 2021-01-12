@@ -1,4 +1,4 @@
-package com.dsy.shared.core;
+package com.dsy.sunshine.core;
 
 /**
  * <p>展现层， 返回给前端数据的基类</p>

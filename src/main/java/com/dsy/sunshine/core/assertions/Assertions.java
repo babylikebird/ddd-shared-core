@@ -1,4 +1,4 @@
-package com.dsy.shared.core.assertions;
+package com.dsy.sunshine.core.assertions;
 
 /*
  * Copyright 2008-present MongoDB, Inc.
